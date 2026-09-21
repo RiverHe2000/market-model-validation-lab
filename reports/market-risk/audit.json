@@ -1,0 +1,162 @@
+{
+  "alpha": 0.975,
+  "audit_source_sha256": "66ddbf7fb666fc2bd61e218de56e1010e364195541e76f9ececf74cf298fe17e",
+  "interpretation": [
+    "Each test is assessed at nominal 5% before Holm; these repetitions estimate size/power, not individual model approvals.",
+    "Correct-distribution rejection frequencies have binomial uncertainty; do not require every null sample to pass.",
+    "The clustered scenario preserves normal marginal tails while violating temporal independence.",
+    "ES-only distortion retains the correct Student-t VaR and lowers ES while preserving ES >= VaR.",
+    "The 5x buffer is judged on coverage and FZ0, not rewarded for suppressing exceptions.",
+    "Fast preset is a smoke audit with wide intervals; formal preset is the predeclared statistical experiment.",
+    "Bootstrap inference remains approximate; any material size distortion is a limitation to report, not tune away on market holdout."
+  ],
+  "kind": "synthetic_validation_audit_not_market_evidence",
+  "preset": "formal",
+  "protocol": {
+    "block_length": 20,
+    "bootstrap_samples": 999,
+    "observations": 5000,
+    "permutations": 999,
+    "repetitions": 200,
+    "seed": 20260920
+  },
+  "results": {
+    "clustered_hits": {
+      "coverage_rejections": 49,
+      "coverage_rejections_rate": 0.245,
+      "coverage_rejections_rate_ci_95": [
+        0.18708412607600186,
+        0.31063986586159875
+      ],
+      "es_available": 200,
+      "es_underestimation_rejections": 2,
+      "es_underestimation_rejections_rate": 0.01,
+      "es_underestimation_rejections_rate_ci_95": [
+        0.0012133490137360304,
+        0.035654668397239776
+      ],
+      "fz0_mean_difference_from_correct": 0.0,
+      "independence_rejections": 200,
+      "independence_rejections_rate": 1.0,
+      "independence_rejections_rate_ci_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "repetitions": 200
+    },
+    "es_only_20pct_low": {
+      "coverage_rejections": 12,
+      "coverage_rejections_rate": 0.06,
+      "coverage_rejections_rate_ci_95": [
+        0.031383953893483446,
+        0.1024618313083245
+      ],
+      "es_available": 200,
+      "es_underestimation_rejections": 134,
+      "es_underestimation_rejections_rate": 0.67,
+      "es_underestimation_rejections_rate_ci_95": [
+        0.6001707396669453,
+        0.7347017965274383
+      ],
+      "fz0_mean_difference_from_correct": 0.026542533539710016,
+      "independence_rejections": 4,
+      "independence_rejections_rate": 0.02,
+      "independence_rejections_rate_ci_95": [
+        0.0054755658795564485,
+        0.05041360908989629
+      ],
+      "repetitions": 200
+    },
+    "normal_correct": {
+      "coverage_rejections": 9,
+      "coverage_rejections_rate": 0.045,
+      "coverage_rejections_rate_ci_95": [
+        0.020780422227004356,
+        0.08370268807585404
+      ],
+      "es_available": 200,
+      "es_underestimation_rejections": 9,
+      "es_underestimation_rejections_rate": 0.045,
+      "es_underestimation_rejections_rate_ci_95": [
+        0.020780422227004356,
+        0.08370268807585404
+      ],
+      "fz0_mean_difference_from_correct": 0.0,
+      "independence_rejections": 8,
+      "independence_rejections_rate": 0.04,
+      "independence_rejections_rate_ci_95": [
+        0.017424808994480595,
+        0.07729196822601608
+      ],
+      "repetitions": 200
+    },
+    "risk_buffer_5x": {
+      "coverage_rejections": 200,
+      "coverage_rejections_rate": 1.0,
+      "coverage_rejections_rate_ci_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "es_available": 0,
+      "es_underestimation_rejections": 0,
+      "es_underestimation_rejections_rate": null,
+      "es_underestimation_rejections_rate_ci_95": null,
+      "fz0_mean_difference_from_correct": 1.4471938254574512,
+      "independence_rejections": 0,
+      "independence_rejections_rate": 0.0,
+      "independence_rejections_rate_ci_95": [
+        0.0,
+        0.018275340355136237
+      ],
+      "repetitions": 200
+    },
+    "student_t5_as_gaussian": {
+      "coverage_rejections": 22,
+      "coverage_rejections_rate": 0.11,
+      "coverage_rejections_rate_ci_95": [
+        0.07023316352921176,
+        0.16179621556950016
+      ],
+      "es_available": 200,
+      "es_underestimation_rejections": 115,
+      "es_underestimation_rejections_rate": 0.575,
+      "es_underestimation_rejections_rate_ci_95": [
+        0.5033041318348099,
+        0.6444388227412945
+      ],
+      "fz0_mean_difference_from_correct": 0.01265694763672547,
+      "independence_rejections": 5,
+      "independence_rejections_rate": 0.025,
+      "independence_rejections_rate_ci_95": [
+        0.008166166190842513,
+        0.05737435112684586
+      ],
+      "repetitions": 200
+    },
+    "student_t5_correct": {
+      "coverage_rejections": 12,
+      "coverage_rejections_rate": 0.06,
+      "coverage_rejections_rate_ci_95": [
+        0.031383953893483446,
+        0.1024618313083245
+      ],
+      "es_available": 200,
+      "es_underestimation_rejections": 8,
+      "es_underestimation_rejections_rate": 0.04,
+      "es_underestimation_rejections_rate_ci_95": [
+        0.017424808994480595,
+        0.07729196822601608
+      ],
+      "fz0_mean_difference_from_correct": 0.0,
+      "independence_rejections": 4,
+      "independence_rejections_rate": 0.02,
+      "independence_rejections_rate_ci_95": [
+        0.0054755658795564485,
+        0.05041360908989629
+      ],
+      "repetitions": 200
+    }
+  },
+  "significance_level": 0.05,
+  "validation_source_sha256": "1e2c340a9a966fe79c639aa130ac1be4b1056204e8b49c17cf433f381bdbd959"
+}

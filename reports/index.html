@@ -1,0 +1,45 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Market Model Validation Lab</title><style>
+:root{color-scheme:light;--ink:#152d3a;--muted:#58707e;--accent:#176e72;--line:#dae4e9}
+*{box-sizing:border-box}body{margin:0;background:#eef3f4;color:var(--ink);font:16px/1.6 system-ui,'Segoe UI',sans-serif}
+main{max-width:1120px;margin:38px auto;padding:38px;background:white;border-top:6px solid var(--accent);border-radius:8px}
+.eyebrow{letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-size:12px;font-weight:750}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.025em;margin:12px 0 22px}h2{line-height:1.25}h3{margin-bottom:8px}
+p{max-width:88ch}a{color:#12696e;text-underline-offset:3px}small,.muted{color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:18px 0}th,td{border-bottom:1px solid var(--line);padding:9px;text-align:left;overflow-wrap:anywhere}th{background:#eaf1f3}code{overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:26px 0}.card{border:1px solid var(--line);padding:24px;border-radius:8px;background:#fbfcfd}
+.tag{display:inline-block;padding:4px 10px;background:#e2f0ef;color:#155d61;border-radius:4px;font-size:12px;font-weight:bold}
+.metric{font-size:34px;font-weight:750;margin:12px 0 0}.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
+.note{border-left:4px solid #cc9455;background:#faf5ed;padding:16px 22px}.footer{border-top:1px solid var(--line);padding-top:20px;margin-top:30px;font-size:13px}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:5px;padding:8px 14px;background:white;color:var(--ink)}button.primary{background:var(--accent);color:white;border-color:var(--accent)}
+.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0}progress{width:100%;accent-color:var(--accent);height:8px}
+.slide{min-height:550px;padding:8px 0 22px}.slide[hidden]{display:none}.slide img{max-width:100%;max-height:460px;object-fit:contain;background:white}li{margin:8px 0}
+.top-nav{display:flex;gap:22px;flex-wrap:wrap;margin:0 0 30px;font-size:14px}.intro{font-size:19px;color:var(--muted)}
+.panel{border-top:1px solid var(--line);margin:36px 0;padding-top:28px;scroll-margin-top:20px}.filters{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0}.filters label{display:grid;gap:7px;font-size:13px;color:var(--muted)}
+select{font:inherit;min-width:170px;max-width:100%;border:1px solid #b9cdd3;padding:10px 32px 10px 12px;border-radius:5px;background:#fff;color:var(--ink)}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #b57321;outline-offset:3px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;background:#eef5f5;padding:22px;border-radius:8px}.kpis strong{display:block;font-size:28px}.event-result strong{display:block;font-size:32px}.event-result{background:#eef5f5;padding:18px 22px;border-radius:6px}
+.table-scroll{overflow:auto}.table-scroll table{min-width:620px}.bar-row{display:grid;grid-template-columns:45px 1fr 65px;gap:14px;align-items:center;font-size:13px;margin:9px 0}.bar-track{height:13px;background:#edf3f5;position:relative}.bar{height:100%;background:#176e72}.bar.development{background:#93bbc0}.reference{position:absolute;top:-3px;height:19px;border-left:2px solid #ab6b29}details{margin:22px 0}summary{cursor:pointer;color:#176e72;font-weight:650}.badge-warn{background:#fff0d8;color:#855b23}.card .finding{font-size:19px;line-height:1.45;font-weight:650}.primary-link{display:inline-block;background:var(--accent);color:white;padding:11px 20px;border-radius:5px;text-decoration:none}.evidence-callout{padding:26px;background:#eaf3f3;border-radius:8px;margin:28px 0}
+@media(max-width:720px){main{margin:0;padding:22px;border-radius:0}.grid{grid-template-columns:1fr}.slide{min-height:450px}}
+@media(max-width:600px){.kpis{grid-template-columns:1fr}.filters{display:grid;grid-template-columns:1fr}.filters select{width:100%}.top-nav{gap:14px}.metric{font-size:30px}.kpis strong{font-size:24px}}
+@media print{main{margin:0;max-width:none}.controls,progress{display:none}.slide[hidden]{display:block}.slide{break-after:page}}
+</style></head><body><main><nav class='top-nav'><a href='evidence.html'>交互式证据</a><a href='#studies'>两项研究</a><a href='CV_BULLETS.html'>简历素材</a><a href='../README.md'>复现说明</a></nav>
+<p class='eyebrow'>Market &amp; pricing model validation</p><h1>模型算得对，<br>还要看风险是否判断得对。</h1>
+<p class='intro'>两项独立金融验证研究。从真实数据出发，保留模型失效的证据，说明结果可以支持什么判断。</p>
+<div class='tag'>141 tests · PASS · 本地离线验收</div>
+<div class='evidence-callout'><strong>先用两分钟，查看关键发现。</strong><p>按年份查看超越与风险缺口，重放瑞郎事件前后的信息变化，再用同一批期权报价比较利率情景。</p><a class='primary-link' href='evidence.html'>打开交互式证据 →</a></div>
+<div class='grid' id='studies'>
+<article class='card'><p class='eyebrow'>01 · Market risk</p><h2>外汇组合的尾部风险</h2>
+<span class='tag badge-warn'>发现：正态模型覆盖率被拒绝</span>
+<div class='metric'>67 <small>/ 40.97</small></div><small>实际 99% VaR 超越次数 / 理论期望 · 4,097 个评估日</small>
+<p class='finding'>平均评分较好，也可能低估尾部事件的发生频率。</p>
+<p>比较历史模拟、EWMA 正态和过滤历史模拟。开发期选出的过滤历史模拟未被拒绝；未拒绝不等于模型已被证明正确。</p>
+<div class='links'><a href='market-risk/report.html'>完整验证报告</a><a href='market-risk/demo.html'>4 分钟演示</a><a href='market-risk/MANAGEMENT_SUMMARY.html'>管理摘要</a><a href='market-risk/INTERVIEW_NOTES_ZH.html'>面试提纲</a><a href='market-risk/audit.html'>验证器审计</a></div></article>
+<article class='card'><p class='eyebrow'>02 · Pricing validation</p><h2>欧式指数期权定价</h2>
+<span class='tag badge-warn'>发现：共同波动率的市场拟合不足</span>
+<div class='metric'>2.73%</div><small>落入买卖价差的比例 · 111,319 条留出报价</small>
+<p class='finding'>公式与 QuantLib 一致，仍可能无法解释真实报价。</p>
+<p>上述数字来自 9–12 月、基准利率下的平价兼容组。全研究保留 558,506 条合格报价；缺少精确时间戳等限制贯穿分析。</p>
+<div class='links'><a href='options/report.html'>完整验证报告</a><a href='options/demo.html'>4 分钟演示</a><a href='options/MANAGEMENT_SUMMARY.html'>管理摘要</a><a href='options/INTERVIEW_NOTES_ZH.html'>面试提纲</a></div></article></div>
+<div class='note'><strong>结论的边界。</strong> ECB 参考价产生的是假设损益；期权日频报价未被证明同步。新增分年、事件与成对情景诊断属于事后描述，没有重新调参或新增显著性结论。</div>
+<details><summary>方法与验收证据</summary><p>每个项目分别提供模型计算、独立验证与报告。正式模拟检查验证器的误拒率和检出能力；数据、代码及报告的校验记录用于发现不一致，并非数字签名。</p>
+<div class='links'><a href='RESULTS.json'>汇总研究结果</a><a href='PUBLISH_MANIFEST.json'>报告文件校验</a><a href='../docs/ACCEPTANCE.md'>验收记录</a><a href='../docs/INDEPENDENT_REVIEW.md'>独立审查</a></div></details>
+<div class='footer'>Sources: ECB reference rates · Federal Reserve H.15 via FRED · HistoricalData.net free sample.<br>计算与结论由本项目生成。原始期权行情保留在本地。</div></main></body></html>

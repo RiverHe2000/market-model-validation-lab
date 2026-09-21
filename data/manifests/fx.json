@@ -1,0 +1,76 @@
+{
+  "dataset": "fx",
+  "validated_utc": "2026-09-20T09:01:18.952980Z",
+  "source": {
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip",
+    "resolved_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip",
+    "etag": null,
+    "last_modified": "Fri, 18 Sep 2026 13:56:29 GMT",
+    "expected_bytes": null,
+    "started_utc": "2026-09-20T08:58:02.971809Z",
+    "fetched_utc": "2026-09-20T08:58:06.862527Z",
+    "bytes": 639491,
+    "sha256": "44924a5317a2dee906f3e38e77a6061541f070074021347b600d8ab03bbd73b0"
+  },
+  "output": {
+    "path": "fx.csv",
+    "sha256": "45b2a3fbfe4150345b1e150519ce9f9bc21d2cfa3a2262586cf7274f2490604e",
+    "bytes": 316844,
+    "rows": 6913,
+    "columns": [
+      "date",
+      "USD",
+      "GBP",
+      "JPY",
+      "CHF",
+      "AUD"
+    ],
+    "start": "1999-01-04",
+    "end": "2025-12-31",
+    "long_raw_rows": 34565,
+    "missing_by_currency": {
+      "USD": 0,
+      "GBP": 0,
+      "JPY": 0,
+      "CHF": 0,
+      "AUD": 0
+    }
+  },
+  "terms_url": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+  "source_page": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+  "source_csv": {
+    "path": "ecb_eurofxref_hist_source.csv",
+    "sha256": "22760c0c056226ba0d12d2acd67c3b60c18407a5185c48a06b3d16672fe6987d",
+    "bytes": 1922007
+  },
+  "normalized_long": {
+    "path": "ecb_fx_1999_2025_long.csv",
+    "sha256": "96f7b1a3006045f71973bfeca6c1ae77a7d6ff90084b7f30c1938ba1df420569",
+    "bytes": 1208667,
+    "rows": 34565,
+    "columns": [
+      "TIME_PERIOD",
+      "CURRENCY",
+      "OBS_VALUE",
+      "CURRENCY_DENOM",
+      "FREQ",
+      "EXR_TYPE",
+      "EXR_SUFFIX"
+    ],
+    "status": "Derived long-format copy; original ECB bytes are preserved separately"
+  },
+  "units": "units of foreign currency per 1 EUR; do not interpret as EUR per foreign currency",
+  "cleaning": [
+    "Preserve official source ZIP and its wide CSV bytes",
+    "Select the fixed 1999-2025 window and five currencies",
+    "Melt to a separately identified normalized long CSV with ECB daily spot conventions",
+    "Reject duplicate date/currency keys, nonpositive values and missing currency observations",
+    "Pivot into date,USD,GBP,JPY,CHF,AUD and sort ascending",
+    "No interpolation or forward fill; no weekend/holiday rows inserted"
+  ],
+  "limitations": [
+    "Reference rates are for information, not executable transaction prices",
+    "Downloaded now; revised historical series, not vintage point-in-time release data",
+    "1999-01-01 is the requested window start; first published observation is 1999-01-04"
+  ]
+}

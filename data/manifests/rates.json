@@ -1,0 +1,52 @@
+{
+  "dataset": "rates",
+  "validated_utc": "2026-09-20T09:01:18.960979Z",
+  "source": {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO&cosd=2022-06-01&coed=2022-12-31",
+    "resolved_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO&cosd=2022-06-01&coed=2022-12-31",
+    "etag": null,
+    "last_modified": "Fri, 18 Sep 2026 20:16:35 GMT",
+    "expected_bytes": 2444,
+    "started_utc": "2026-09-20T08:57:03.105862Z",
+    "fetched_utc": "2026-09-20T08:57:03.108862Z",
+    "bytes": 2444,
+    "sha256": "07676405446c1276c8c655aaa623066b4582cb4ac33a9866879061ad14b68a48"
+  },
+  "output": {
+    "path": "rates.csv",
+    "sha256": "189da88de339a24971d85758378c09c0f0300553603b4fc84d7044e3e53991e2",
+    "bytes": 3064,
+    "rows": 146,
+    "columns": [
+      "date",
+      "rate"
+    ],
+    "start": "2022-06-01",
+    "end": "2022-12-30",
+    "missing_source_dates": [
+      "2022-06-20",
+      "2022-07-04",
+      "2022-09-05",
+      "2022-10-10",
+      "2022-11-11",
+      "2022-11-24",
+      "2022-12-26"
+    ]
+  },
+  "source_page": "https://fred.stlouisfed.org/series/DGS3MO",
+  "terms_url": "https://fred.stlouisfed.org/legal/",
+  "originator": "Board of Governors of the Federal Reserve System (US), H.15",
+  "series": "DGS3MO",
+  "source_units": "percent per annum, investment basis, daily, not seasonally adjusted",
+  "units": "annual decimal yield; investment-basis quote, not a full continuously compounded zero curve",
+  "cleaning": [
+    "Convert percent to decimal by division by 100",
+    "Drop missing holiday observations and record their dates",
+    "Reject duplicate/nonfinite observations; no interpolation or forward-fill in stored rates"
+  ],
+  "limitations": [
+    "One 3-month Treasury yield is a documented discounting proxy, not an OIS/zero curve for all maturities",
+    "Using an earlier available observation requires an explicit backward as-of rule in the pricing study",
+    "Historical downloaded series may have revisions; citation requested for public-domain Federal Reserve observations"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "status": "PASS",
+  "started_utc": "2026-09-20T09:42:33.853220+00:00",
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "QuantLib": "1.43",
+    "pytest": "9.1.1",
+    "ruff": "0.16.8"
+  },
+  "steps": [
+    {
+      "name": "dependencies",
+      "working_directory": ".",
+      "arguments": [
+        "-m",
+        "pip",
+        "check"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.588
+    },
+    {
+      "name": "root-lint",
+      "working_directory": ".",
+      "arguments": [
+        "-m",
+        "ruff",
+        "check",
+        "scripts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.117
+    },
+    {
+      "name": "market-lint",
+      "working_directory": "market-risk-validation",
+      "arguments": [
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.122
+    },
+    {
+      "name": "market-tests",
+      "working_directory": "market-risk-validation",
+      "arguments": [
+        "-m",
+        "pytest",
+        "tests",
+        "--import-mode=importlib",
+        "-q",
+        "--junitxml=D:\\Project\\market-model-validation-lab\\artifacts\\verification\\market.xml"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 23.878
+    },
+    {
+      "name": "options-lint",
+      "working_directory": "option-pricing-validation",
+      "arguments": [
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.129
+    },
+    {
+      "name": "options-tests",
+      "working_directory": "option-pricing-validation",
+      "arguments": [
+        "-m",
+        "pytest",
+        "tests",
+        "--import-mode=importlib",
+        "-q",
+        "--junitxml=D:\\Project\\market-model-validation-lab\\artifacts\\verification\\options.xml"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 5.999
+    },
+    {
+      "name": "data-tests",
+      "working_directory": ".",
+      "arguments": [
+        "-m",
+        "pytest",
+        "scripts/tests",
+        "--import-mode=importlib",
+        "-q",
+        "--junitxml=D:\\Project\\market-model-validation-lab\\artifacts\\verification\\data.xml"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 1.239
+    }
+  ],
+  "junit_totals": {
+    "tests": 141,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "network_note": "Tests use local fixtures and mocked downloads; installation is separate.",
+  "source_sha256": {
+    ".github/workflows/ci.yml": "44b66d1629726f1039fc15fae6f55d1c3232286a0638007fac2732b258f6b3b6",
+    "market-risk-validation/pyproject.toml": "894920fdedfc9393b36d1966f51c9c0cd1e56c8b28fc9632c6727279b61658ab",
+    "market-risk-validation/src/market_risk/__init__.py": "e87b789b81e0380ddda474366149ce8bfb59ea06a287e07bf163359214db960b",
+    "market-risk-validation/src/market_risk/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "market-risk-validation/src/market_risk/audit.py": "66ddbf7fb666fc2bd61e218de56e1010e364195541e76f9ececf74cf298fe17e",
+    "market-risk-validation/src/market_risk/cli.py": "e40395cf65b3486e81ab6cac03f400b9b67bf5cb12802f166535561248be62d9",
+    "market-risk-validation/src/market_risk/data.py": "eb117813e005c358d26548caf86375cb7b3045f048dd37f669e9012c62ddc4f4",
+    "market-risk-validation/src/market_risk/diagnostics.py": "ac81882a902629bf72e8a5a4f3c3793890a6f44eff9f54cfab1ab5f652de9a31",
+    "market-risk-validation/src/market_risk/models.py": "e94da892034896e5f9381c8d6e501fb98ec659ace60c9cd8c8595813011ee931",
+    "market-risk-validation/src/market_risk/reporting.py": "237234b855ff50084c2b86daa985643454e0c23f289e2c192fe4774e635b8e25",
+    "market-risk-validation/src/market_risk/runner.py": "c7b3b0fd77e7dc57f21019af0866e85d4c00d3efa5cab3176978ed82ac7a73c0",
+    "market-risk-validation/src/market_risk/validation.py": "1e2c340a9a966fe79c639aa130ac1be4b1056204e8b49c17cf433f381bdbd959",
+    "market-risk-validation/tests/conftest.py": "3c84c61fedc39c0d5ba28afd78b1a14619fd92aa55f8345f27435b1202ce25ce",
+    "market-risk-validation/tests/test_audit_receipt.py": "61651262a5d9edc57672eff2acd57e1ff7a3cf90fa1871116ac36c0f184fc7c6",
+    "market-risk-validation/tests/test_data_models.py": "8bb303507fdc55e32e0312c6d2c2d47d51dccb60265e97cfce802e4c36cef60b",
+    "market-risk-validation/tests/test_diagnostics.py": "396eb72fcf733427ff6bc213bac262325651ab8130c378d30d894cb173acb9a0",
+    "market-risk-validation/tests/test_pipeline.py": "5808bcf95485d1a40015a32893aa628a2d3a7e62eae9197760f2a7a6d0720cca",
+    "market-risk-validation/tests/test_validation.py": "91b497ce6a857cba399812bda5a0ef500d67ec779d69585734c3f2ca047b82b8",
+    "option-pricing-validation/pyproject.toml": "d4e49b55910bf358b16ca300e3b3874039f81c9495ec5e9a5423beb682737518",
+    "option-pricing-validation/src/option_validation/__init__.py": "e8d522bb020242d206122559a2f6b7c6a9ca11cb1dfb60d4ac99cc5c43897fa5",
+    "option-pricing-validation/src/option_validation/__main__.py": "f7336b434caa6d16aa66c7466bdf3d8288f8815232003e441f865c641c2e9fa8",
+    "option-pricing-validation/src/option_validation/cli.py": "993329b307a13cdac851f26576cfbd7184088fb43c7bd1495d595d61bc359f0b",
+    "option-pricing-validation/src/option_validation/data.py": "2b9bfc0ea2c0112c2be88a0519d898c5b96bc1754b0cf195a8c00110d4ea62d1",
+    "option-pricing-validation/src/option_validation/diagnostics.py": "f586c1a0c2b817faf73256db09b914658ef0c2b69607f9d43c31a7fa27f47bf9",
+    "option-pricing-validation/src/option_validation/diagnostics_validation.py": "d248eb0abfa2cea8d3ab2441a43c3bbfc13ba98b5e1f6e800b72e63d6e2b9e6a",
+    "option-pricing-validation/src/option_validation/experiments.py": "7a7dc9374f5e22a82068366e28a1f32f833fda8c2fb3391e51d4f0faa61b35be",
+    "option-pricing-validation/src/option_validation/market_validation.py": "f146edb6976003697c643aff9742ebd8ab501793b33897f2f261bc7f0d031160",
+    "option-pricing-validation/src/option_validation/pricing.py": "c95a5b621c181127be2c9bb4ef84420c61ef30aa1160ffbb6cd79a90c7bb703e",
+    "option-pricing-validation/src/option_validation/report.py": "c89f8b5f530d61b22925c0cdc799693f14b0e02416f4f8600414350701082079",
+    "option-pricing-validation/src/option_validation/study.py": "c31d044ceb661976764954f32b04fe5850b6c62e1d66dde069fd95e3cd5a1a7b",
+    "option-pricing-validation/src/option_validation/validation.py": "2d65f9fb303e41dbb77d276032738b37b27a8376979ca112191eeda2cdbea9b6",
+    "option-pricing-validation/tests/test_diagnostics.py": "0f396fd27e38e901926225e8bb09b012f2c6b6da163c084e5ae0bc1609fbdf0d",
+    "option-pricing-validation/tests/test_pricing.py": "3507a319c1e4ed6541a9a3b14864c79cfc618325590351c2cb06142c2f8c51c2",
+    "option-pricing-validation/tests/test_workflow.py": "89c191da3987b59587218d799019e3b001163953d47073eb29145e78704fa008",
+    "pyproject.toml": "6cb83d75008028d27087b32aafd986863360859ad32f947db910eb0a649dc7e2",
+    "requirements.lock": "c09d632a983e7d39e28b03af2b6e3b047452fbed35cbbace0538166c4da6046b",
+    "scripts/build_showcase.py": "634506f4ef441bc5c7b02c5bf78a13fea9ad39a359fefc5a26efb6e926d04d6b",
+    "scripts/evidence.py": "1659d8b7b8b686dd9ea203e3847868a7ce6237f4df376675cf70fdfee2268195",
+    "scripts/fetch_data.py": "559d0628ab643d1984e4fdededca8db46141f1db07a750383ffa74fde5a489aa",
+    "scripts/publication.py": "584969ffaa3558719670d9116e4531e657facd1dfe74e9cd373ee07378c7dc6c",
+    "scripts/run_study.py": "e54e6b6bcc6922c09062249bee92d60dced1256cea74159332454d8566bdf0b8",
+    "scripts/showcase_ui.py": "121e2dbad53e6348f7e4f06e5e860445b6baad5ed1c7e53be190c9e777782a1f",
+    "scripts/tests/test_fetch_data.py": "cf3c7e1a27f0121d5175912346696f59a231e530de641f4a68e2b5932b40cef1",
+    "scripts/tests/test_release_pipeline.py": "4c14b87d1ee1529b4d9ebd19ef64df4c317620f0a3a7e04091b24f76ef5370ab",
+    "scripts/verify_repo.py": "4747ec2f027a2cfb9abce47dc5ec1d855608c7491f14d88aa69cf37c2201fc6a"
+  },
+  "finished_utc": "2026-09-20T09:43:06.070965+00:00"
+}

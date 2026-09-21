@@ -1,0 +1,1011 @@
+{
+  "dataset": "options",
+  "validated_utc": "2026-09-20T09:02:16.526682Z",
+  "source": {
+    "url": "https://historicaldata.net/file/options_sample_2022H2.zip",
+    "resolved_url": "https://historicaldata.net/file/options_sample_2022H2.zip",
+    "etag": "\"6e6035a6ffcf78da91c6500853eaae03\"",
+    "last_modified": "Mon, 07 Sep 2026 17:48:11 GMT",
+    "expected_bytes": 238583748,
+    "started_utc": "2026-09-20T08:57:03.774859Z",
+    "fetched_utc": "2026-09-20T08:57:12.540357Z",
+    "bytes": 238583748,
+    "sha256": "8517b069f4d41e44f950dc79a3cdab694359b0fae91664190011e39dd8e48b76"
+  },
+  "source_page": "https://historicaldata.net/samples.html",
+  "terms_url": "https://historicaldata.net/terms.html",
+  "schema": [
+    "contract",
+    "underlying",
+    "expiration",
+    "type",
+    "strike",
+    "style",
+    "quote_date",
+    "bid",
+    "bid_size",
+    "ask",
+    "ask_size",
+    "quote_time",
+    "volume",
+    "open_interest",
+    "open",
+    "high",
+    "low",
+    "close",
+    "trade_vwap",
+    "transactions",
+    "multileg_volume",
+    "active_minutes",
+    "last_trade_date",
+    "underlying_close",
+    "settlement_time",
+    "iv_bid",
+    "iv_ask",
+    "iv",
+    "iv_flag",
+    "delta",
+    "gamma",
+    "theta",
+    "vega",
+    "rho"
+  ],
+  "files": [
+    {
+      "name": "2022-07-01_options.csv",
+      "rows": 34898,
+      "bytes": 6626588,
+      "sha256": "00a1c5086256ac6d66fc07f0045e755904fc240dbb29f90f9245ee5142c51ab2",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-05_options.csv",
+      "rows": 34468,
+      "bytes": 6566018,
+      "sha256": "c8fe35df43779832b10f4901dddf2444d81846e5db9c067a5f31ed0807ac044d",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-06_options.csv",
+      "rows": 33966,
+      "bytes": 6377593,
+      "sha256": "e5b2bab0335ba9beae503ac38d5317b1eba9f966e7875845506fcbcce83e1425",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-07_options.csv",
+      "rows": 33814,
+      "bytes": 6463748,
+      "sha256": "852250eeef974777d6db55cb5ea2c64320a3f4037c0317b79020362071f88b5e",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-08_options.csv",
+      "rows": 34204,
+      "bytes": 6423108,
+      "sha256": "c566d0d94a8b23d3254b84d47fe6ba15c641976a6065c611931f352781fa9cef",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-11_options.csv",
+      "rows": 33936,
+      "bytes": 6364284,
+      "sha256": "2131ef23e0cb13d2d3bd53950b6e7cf42153e085ab44c539c4fde5f550de0282",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-12_options.csv",
+      "rows": 34142,
+      "bytes": 6459967,
+      "sha256": "60c4e11cdfc5f61ce0441ffab086de893ae2d1db74eca6e77c7061b012a4b0d0",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-13_options.csv",
+      "rows": 34129,
+      "bytes": 6491191,
+      "sha256": "6d523e6c5ce656f382b3e65ce445613e9e94902094190d4ecad5fcffc4fc4551",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-14_options.csv",
+      "rows": 34662,
+      "bytes": 6483678,
+      "sha256": "24ffb5df2fe69bf14bcf7dff11b6da4a7a533659d46be83c0a82052752c83818",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-15_options.csv",
+      "rows": 35132,
+      "bytes": 6587976,
+      "sha256": "d0301e9e7d9ce9335ab998af1fc99ff7523d322614ec177774361c470b4b9115",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-18_options.csv",
+      "rows": 32894,
+      "bytes": 6222206,
+      "sha256": "29dece404bdb6965ce99136494c48bef158d0412cb025f0f6b2fc6eb2dbbeddb",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-19_options.csv",
+      "rows": 32984,
+      "bytes": 6279351,
+      "sha256": "2d82c38fee1b93f5b6a0293fb66fc971989fb466423c7e26a4bf78316bce5e82",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-20_options.csv",
+      "rows": 33042,
+      "bytes": 6255412,
+      "sha256": "e5ee596bf6349a3b000937735b743caf322cf157eeb41da5fbf0263118331d40",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-21_options.csv",
+      "rows": 33862,
+      "bytes": 6514370,
+      "sha256": "5e89ca68a9415c793d12a6a987ea99b7fbf2059085ebbe7e12d2abcf99a4a997",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-22_options.csv",
+      "rows": 34364,
+      "bytes": 6533598,
+      "sha256": "c67227d7bb294f90ee874dfa5bc984f45bc547952aff8fe7e9c61509b8623b15",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-25_options.csv",
+      "rows": 33678,
+      "bytes": 6347135,
+      "sha256": "ea9fb5c6f971167f80fdad4ee2f03e4a6abb85e5a0599e7d3b04569954fe625c",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-26_options.csv",
+      "rows": 33572,
+      "bytes": 6291500,
+      "sha256": "6568ce9726deb7eba2863cdf5d2c758af1e673e55d6e9da47fd20d572e4c49cc",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-27_options.csv",
+      "rows": 33552,
+      "bytes": 6378171,
+      "sha256": "0b8929f35cb5ed409ca84a90c0fe91f8cb63804756b213999abce30d89ab1db6",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-28_options.csv",
+      "rows": 33906,
+      "bytes": 6438067,
+      "sha256": "45399e861b74010317b0b67b57da361d14ec6947fbb9b8a32070fc2121742a22",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-07-29_options.csv",
+      "rows": 34162,
+      "bytes": 6523261,
+      "sha256": "36f1d35e637399ca932f68d22201dee8dcc451d3337379990a7453bb1690bd4d",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-01_options.csv",
+      "rows": 34378,
+      "bytes": 6569580,
+      "sha256": "86b484b1d3f314b96550556bf4c0f12dce161552cfb44de7d1734b312612a4e4",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-02_options.csv",
+      "rows": 34138,
+      "bytes": 6564125,
+      "sha256": "dc736aaef2e7069ebc99552b2476f0cd423a827702767eccf86a85cd1d70ca50",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-03_options.csv",
+      "rows": 34044,
+      "bytes": 6512136,
+      "sha256": "741a9f9fcafeb10a4f186c08c36c2fcad3c99e501c4dff190c629d340e87d753",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-04_options.csv",
+      "rows": 34304,
+      "bytes": 6474869,
+      "sha256": "f672d39ea4c58a8946eb8e9a925147589f65e69274b1f8cc382ebc7f2e5b38e9",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-05_options.csv",
+      "rows": 34624,
+      "bytes": 6567612,
+      "sha256": "919632b6a825a94f1bb621770fc27c248bc15b1ba3ee8387e70624633a466da3",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-08_options.csv",
+      "rows": 33814,
+      "bytes": 6426852,
+      "sha256": "97f3f49945cb0013964388e88f12b7aae3b65f3fc218b4d69920aa13b126770b",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-09_options.csv",
+      "rows": 33732,
+      "bytes": 6355908,
+      "sha256": "8ddda3f941f723ab2caecb72f395534fb04c702b9c6e6b3585eeafd6d1e4d3f3",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-10_options.csv",
+      "rows": 33618,
+      "bytes": 6421194,
+      "sha256": "0f05e9fe126bd311755a466533619e03b50d257aaf37d1cd6472a1815331c3f0",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-11_options.csv",
+      "rows": 33862,
+      "bytes": 6400245,
+      "sha256": "d6967bd57ad30fd30a8f51d6464f2543eccb80b36b70ae75ae3e98108f15beb6",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-12_options.csv",
+      "rows": 33976,
+      "bytes": 6453998,
+      "sha256": "c40687331530df99771055718fd9d125037cfe6ccb80d35dd592a2b36359a565",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-15_options.csv",
+      "rows": 33940,
+      "bytes": 6492790,
+      "sha256": "d380fc17435d3944083fcff1322df7d15b8fc3412f6876e88d442de2666b0624",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-16_options.csv",
+      "rows": 34120,
+      "bytes": 6440098,
+      "sha256": "6261ded383f6b26f5d5bcf2efffb4a23f4da0f2b0c280912b6e1411b9b338858",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-17_options.csv",
+      "rows": 34136,
+      "bytes": 6450054,
+      "sha256": "a7930e34a84bfb60be7b1cbc7205279c901ed80212451a830948d17661b675dd",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-18_options.csv",
+      "rows": 34226,
+      "bytes": 6402051,
+      "sha256": "02deed4344b6deadbc5bf0b5dba7bd2db3326d0160880e3d679381b270d64264",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-19_options.csv",
+      "rows": 34284,
+      "bytes": 6380448,
+      "sha256": "c418efce28d509d6a57c55c8ee343fa2167643433b1f078c8e3e4a743c0c355c",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-22_options.csv",
+      "rows": 32040,
+      "bytes": 6120094,
+      "sha256": "95cb08172a433c14e0fd01f7f63653174298ad75919002da1ea6ed74fb5c5b52",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-23_options.csv",
+      "rows": 32440,
+      "bytes": 6176547,
+      "sha256": "925b1a8b86b6c58bdac5e299ee44216e6ff8c44c80cbd86dc0d6855e774c9fe8",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-24_options.csv",
+      "rows": 32468,
+      "bytes": 6108066,
+      "sha256": "2af4ee20de25c95168d904d8f22d3c057aeee1050f88752cee09cecda7c95e55",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-25_options.csv",
+      "rows": 32418,
+      "bytes": 6099334,
+      "sha256": "4eb2102efafc74d665cac5da8b938456bf2132843f2e4025d8a9e4ab5aada492",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-26_options.csv",
+      "rows": 35156,
+      "bytes": 6519222,
+      "sha256": "46a43667e19b4581cd2383d16eb7fff1c05385c6eb25d68d8aeeb9cb58350ccd",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-29_options.csv",
+      "rows": 34704,
+      "bytes": 6462029,
+      "sha256": "152d7b85ef6d30a474f4a3b1b8359cffd1bc142c9516c1ea8fd2c56ea40c3ca5",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-30_options.csv",
+      "rows": 34854,
+      "bytes": 6456024,
+      "sha256": "391ca9f23ec8fe405399d43050d4247663b5396114ce11c456e419f7be46a730",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-08-31_options.csv",
+      "rows": 35036,
+      "bytes": 6381285,
+      "sha256": "7f32012c6cc297b2935fc69fa023996f4af696e13ce828e83b1166a45ad7a69c",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-01_options.csv",
+      "rows": 35096,
+      "bytes": 6521680,
+      "sha256": "21dbb63804997dc3f6190f3648d274704715e70427a11279a6675320338ce5bb",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-02_options.csv",
+      "rows": 35518,
+      "bytes": 6551169,
+      "sha256": "024c1e6fd4fa089bd4a3b96371b04dd48c7408fc114c1fac58cdd375d158d733",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-06_options.csv",
+      "rows": 34618,
+      "bytes": 6358827,
+      "sha256": "cde5a6518b798915ea08c91fd33d199819cf289e41040479d055db55dd91f101",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-07_options.csv",
+      "rows": 34722,
+      "bytes": 6385608,
+      "sha256": "1adae17d4ce82c858cedd77b5d4936b32713af3061a2b762a69b4b32a660f38d",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-08_options.csv",
+      "rows": 34722,
+      "bytes": 6404866,
+      "sha256": "5d22d27e37de44f2c05dc1bb2296a4ec58d07ad9165868c09eeb182dbe92bf35",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-09_options.csv",
+      "rows": 35216,
+      "bytes": 6500822,
+      "sha256": "a34f6e85b65a8e9463ddf234c14e9f0bb4ebb1f7853d53cf0bfa59e2ed3c6f5b",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-12_options.csv",
+      "rows": 34984,
+      "bytes": 6536856,
+      "sha256": "f98b7724b7062f420f50c7d139412a55334ac5eee8a0ceac71ce7d4f0b1c1403",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-13_options.csv",
+      "rows": 34960,
+      "bytes": 6561371,
+      "sha256": "12b9150a4ca1cb9bbf9ace11d911f64e07e57ea06b919745f330a8a9b5b5a897",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-14_options.csv",
+      "rows": 35114,
+      "bytes": 6501685,
+      "sha256": "5514ab4452f0da2e936b02a8d3ca56950d0a02476affcb61726e56f92c5e0649",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-15_options.csv",
+      "rows": 35538,
+      "bytes": 6552581,
+      "sha256": "054acc61106b15a21a2b166e975a506fb0559b9a8d7ec896817ab5e6eb8c208a",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-16_options.csv",
+      "rows": 35868,
+      "bytes": 6511854,
+      "sha256": "c097f268d106fa420453880f28444c4a6a0b966f1c1d866fff4c0309776682a0",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-19_options.csv",
+      "rows": 34245,
+      "bytes": 6330205,
+      "sha256": "d990f98a1291afaff1b695e4f9600f7e3c37bc43c0b40737de56af8978b3d512",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-20_options.csv",
+      "rows": 34078,
+      "bytes": 6288445,
+      "sha256": "536b96909413814bebe327792145c100fd90279d1b06bfbe72f6a2612cda3afc",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-21_options.csv",
+      "rows": 34130,
+      "bytes": 6290501,
+      "sha256": "11fa4fa5b8950e2c56030f15df914112b7a2e7b2cb6b13af9d15c448808827bb",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-22_options.csv",
+      "rows": 34694,
+      "bytes": 6425567,
+      "sha256": "cdbf6a79de0069dd420d40fe337ddfee95cdf530b8a6b88fe04b99e26daa806c",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-23_options.csv",
+      "rows": 35486,
+      "bytes": 6712291,
+      "sha256": "90329592be837cc074f32a41b44262b08c19781c0f6b21ab8d5c7476f652eebb",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-26_options.csv",
+      "rows": 34970,
+      "bytes": 6607659,
+      "sha256": "4f302cfb48ae7b8414b6236a281e7189c88ebbb3f16fbad6d268eeb2243c9043",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-27_options.csv",
+      "rows": 35936,
+      "bytes": 6750377,
+      "sha256": "a24c53a506d357912c854e42b09f03a6f37c767abfaf4460aadb2561d9d4c8ce",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-28_options.csv",
+      "rows": 36454,
+      "bytes": 6779292,
+      "sha256": "0c83c211bc31792898dd9852d69ba35785bff600f18d749c7d79a64b9fbff81b",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-29_options.csv",
+      "rows": 36236,
+      "bytes": 6724228,
+      "sha256": "97dc1e161a34ece2306b29e2dcca6306be712d10349866c89e6d552f5a232a41",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-09-30_options.csv",
+      "rows": 36298,
+      "bytes": 6660386,
+      "sha256": "0004d71871a27497d4cfc28efd8f3297f6b2b032e9198b1c8ba76435f2dfbedd",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-03_options.csv",
+      "rows": 35756,
+      "bytes": 6657169,
+      "sha256": "e50b75807e430241e401e0cdc3837217b676c166312c158d0cab8acb8e597934",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-04_options.csv",
+      "rows": 33792,
+      "bytes": 6510092,
+      "sha256": "46d89ed5d09e761bb9c0fad9844a897a7a6f3463ac0e422b76730c654edef427",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-05_options.csv",
+      "rows": 36380,
+      "bytes": 6737490,
+      "sha256": "e4fe4bc15aa4257bb06c4503322d7ec8e857a07c7efa8e83fe117340e9ddf5ad",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-06_options.csv",
+      "rows": 36454,
+      "bytes": 6725420,
+      "sha256": "75a7137233ceb6689f438dfa5220a7e5957092d928c2776160757329334a507c",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-07_options.csv",
+      "rows": 36636,
+      "bytes": 6866166,
+      "sha256": "bd02b3ffc0cdc235c58be94b7fcd69031f50ab4841f7e5accce6930dab52e1a9",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-10_options.csv",
+      "rows": 35964,
+      "bytes": 6656289,
+      "sha256": "92b85e90375486564ad33a418346fdac9aadf0d74333276648f3eff5c48e0520",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-11_options.csv",
+      "rows": 35658,
+      "bytes": 6632496,
+      "sha256": "0be4327dfa8cd6465e487eaeb0bdc8fac46c0e0fd675f4569d79fcde9bda5816",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-12_options.csv",
+      "rows": 35798,
+      "bytes": 6628455,
+      "sha256": "841199568ff1ccd332cb06e0767a69740eb7e5a4b77c502ae40e6b8ea87ee46d",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-13_options.csv",
+      "rows": 35656,
+      "bytes": 6714798,
+      "sha256": "1a613cd5c96b16dd1b4aec8fbb1013969d1330ac9d0990c4dd37b079019eb0cc",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-14_options.csv",
+      "rows": 36276,
+      "bytes": 6762833,
+      "sha256": "0eb9502b1d1d8f5e94350346d603cb8ce524a5612c79c119a8b3ba205d96b92b",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-17_options.csv",
+      "rows": 35480,
+      "bytes": 6627557,
+      "sha256": "b945f3685a29b7d42ebc874171cd588323e7fbe69659a84e19d85e78dcdeb865",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-18_options.csv",
+      "rows": 35418,
+      "bytes": 6603886,
+      "sha256": "e48f30bde0ff29096c6d83aec3fb07c025b15abbfeba4a402dfd452e77324f91",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-19_options.csv",
+      "rows": 35468,
+      "bytes": 6589631,
+      "sha256": "f1cd33066ac6d3b1e7bad35241cf612a13b7c6c44d6b469467410843f7d926ef",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-20_options.csv",
+      "rows": 35846,
+      "bytes": 6593957,
+      "sha256": "f199e085caa4bcd086c9e15bd56f27da62a6065e3ff0e91c071a460a069c6e83",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-21_options.csv",
+      "rows": 35884,
+      "bytes": 6639360,
+      "sha256": "6b4faa334e54ee165ff207226a4c3c86559fa080914c3399ab6ab3827f132974",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-24_options.csv",
+      "rows": 33904,
+      "bytes": 6455895,
+      "sha256": "0152f6dbb45fe6a689944ca708dcd43e6a88ed5c60a8f12a3f4ee4a4a2e37eb9",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-25_options.csv",
+      "rows": 34220,
+      "bytes": 6502936,
+      "sha256": "abbb0a07fecee71ed0a8aa89caf9bbe2e1b0ebb3c5dacdeae05bc31fa7dab314",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-26_options.csv",
+      "rows": 34562,
+      "bytes": 6434226,
+      "sha256": "6d2bfb0d60ee06f741040c34de986355453f40fd56f1010c64b0e7075d1e1897",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-27_options.csv",
+      "rows": 34589,
+      "bytes": 6430738,
+      "sha256": "0b523e1a2fb1ea6a59bb4b29154644e59eeba8b8bc523e719ece3b271f266048",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-28_options.csv",
+      "rows": 34780,
+      "bytes": 6540928,
+      "sha256": "2e4f6784529a60d13205ad50811c4fa04e21c7bfb2f566542a06a1b821f5a38b",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-10-31_options.csv",
+      "rows": 34434,
+      "bytes": 6412254,
+      "sha256": "823f6a47718544aa0f2c6e296939fc1618ffaccb7b0195b49be4ac7e751cb8be",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-01_options.csv",
+      "rows": 34452,
+      "bytes": 6445182,
+      "sha256": "9401def36ac6b425f8d7590d129a7cdc0362c543ec2cd59ac87feabdf0903277",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-02_options.csv",
+      "rows": 34538,
+      "bytes": 6475114,
+      "sha256": "8d7189a4d49191ec6559019c27108eda1fb2fd6c9b7b35be8e8a697685996ff5",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-03_options.csv",
+      "rows": 34728,
+      "bytes": 6473678,
+      "sha256": "8a013e027aa2b36dbe991f5fcc95bbf8deb303198b845f51a3e6b3fea255f312",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-04_options.csv",
+      "rows": 34972,
+      "bytes": 6532194,
+      "sha256": "104be4134fec85cf48304839ec0298603df4c6e1d5d2ce2668baa3d841da9a39",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-07_options.csv",
+      "rows": 32722,
+      "bytes": 6217424,
+      "sha256": "f28dc774c0069b9c7cd69e5fc7bd13a344f73c0afa3b39c0fd9dc5bfb8b59a0f",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-08_options.csv",
+      "rows": 32506,
+      "bytes": 6207383,
+      "sha256": "677ad846d07674eb57cab31cef343724937e002d17aafb7fd238c0b954506a05",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-09_options.csv",
+      "rows": 32600,
+      "bytes": 6134595,
+      "sha256": "f1ba75177285feca1484a6a66027af47e5b1d86a316b8a1813ddbfda44938156",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-10_options.csv",
+      "rows": 32416,
+      "bytes": 6270307,
+      "sha256": "adcb8a2b15cc3c7b951491dd497548b3d54cd9451a118804a8ec7d79a6c5be23",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-11_options.csv",
+      "rows": 33380,
+      "bytes": 6419966,
+      "sha256": "b10a9e0e5a98e02e02e6f8b2a3cb0c9ecc6ef022d0762589d4e6db040384487e",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-14_options.csv",
+      "rows": 33044,
+      "bytes": 6220889,
+      "sha256": "26760a0ab150afd21398683300c8374d90bfe5e03758fed41eb3f0da96140303",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-15_options.csv",
+      "rows": 33378,
+      "bytes": 6325307,
+      "sha256": "1e28ae763d023f3923bebe47fc4d1416a24138b99a62d53569aed14aab67cbfe",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-16_options.csv",
+      "rows": 33540,
+      "bytes": 6240408,
+      "sha256": "b6b690e71b27d41b0341147010d483db6d23f230e6ad03c2d75cbd7923dcc6e3",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-17_options.csv",
+      "rows": 33626,
+      "bytes": 6278089,
+      "sha256": "56f9ba673fc8d1647a8abb72f508a42670cd497f7d9d35339b37b43931de0cef",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-18_options.csv",
+      "rows": 33388,
+      "bytes": 6261022,
+      "sha256": "bd15970040cee42a5063ff4bdeca951a62d24075f78f72d1b6a8173ac5196c3d",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-21_options.csv",
+      "rows": 31836,
+      "bytes": 5968116,
+      "sha256": "1b7d4b9696d532ce94a2e0a60af2382afb7ef2a1e039f833d92f79715fc48ab6",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-22_options.csv",
+      "rows": 32048,
+      "bytes": 6067044,
+      "sha256": "c9b9ed9730503237d2d6bb16fc57790d6da3ef10a39f28f0c74cdbad59a09657",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-23_options.csv",
+      "rows": 32236,
+      "bytes": 6074466,
+      "sha256": "bd451620ebdc6fc34ffe02d022d14e2e13e4c5309408da38b1a73c2f1aeefbe1",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-25_options.csv",
+      "rows": 32300,
+      "bytes": 5946311,
+      "sha256": "530c91c86f664d31045ed1ea440b62df7e3ba729aca3b21660efd4459fdc4106",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-28_options.csv",
+      "rows": 31838,
+      "bytes": 5970373,
+      "sha256": "6c3ac0ccc2cb1425dcc0b278cf1794b6a48ebc1607d47b257a7fbff0cc91c25f",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-29_options.csv",
+      "rows": 31650,
+      "bytes": 5959732,
+      "sha256": "7be226677186d6fcd207e9248bf5a4353f379bc22ca86d0c481a118aaa844dcd",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-11-30_options.csv",
+      "rows": 31484,
+      "bytes": 5993902,
+      "sha256": "40e1c279e9228f1a14c4f546df02652bf6b3fab5a61d56482c1b90b9a6dc6c43",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-01_options.csv",
+      "rows": 32192,
+      "bytes": 6092868,
+      "sha256": "b3dd85c32c54c696b43082a82d731cab91aae1bd6b6deb062d212e96f9c4f01c",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-02_options.csv",
+      "rows": 32310,
+      "bytes": 6083790,
+      "sha256": "68984eb06411b419818a0b33a62b0daf2f6799828083d847361e2410c4f7dcdd",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-05_options.csv",
+      "rows": 32006,
+      "bytes": 6026339,
+      "sha256": "986b290ec7ee5d656f95205bd2265c91df4af82075ec998cb35e465d8218b006",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-06_options.csv",
+      "rows": 31800,
+      "bytes": 6021601,
+      "sha256": "93b9524ca775366a56701da4c0d9e242a9e04da3864c1b582947b54517c80436",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-07_options.csv",
+      "rows": 31696,
+      "bytes": 5975161,
+      "sha256": "e0680c902a9cbb6adbced693f58e42f4699666e062c2df9932f375efffb9badd",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-08_options.csv",
+      "rows": 31924,
+      "bytes": 6011164,
+      "sha256": "ae48e816c15b38913ae48dc04a2924efb784df03fa5c4e767d1c1795aba8fc91",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-09_options.csv",
+      "rows": 31616,
+      "bytes": 5951371,
+      "sha256": "2aefdc8160b0524fc1f7d9aa612d17f5d7702e1c439aeb7f567f00d9f814da57",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-12_options.csv",
+      "rows": 31388,
+      "bytes": 5965794,
+      "sha256": "27add914be09a02682176ea5aec131f67affefd87a0db6ddd56478d703904912",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-13_options.csv",
+      "rows": 31416,
+      "bytes": 6011451,
+      "sha256": "7e81cbae3c8205349c593d11107adbdfaf012bb69c974e162e1c86c0fcb7ac2e",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-14_options.csv",
+      "rows": 31240,
+      "bytes": 5880521,
+      "sha256": "ecc2b56e4d4d0bc4cc2fe93965b8dd3ebab0c68250ae3fd65d0782203bcf9d1d",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-15_options.csv",
+      "rows": 31706,
+      "bytes": 5996422,
+      "sha256": "c21001938e23bfe7a89312972d9ef3111b9b12bbbd08d6b0cb6fc96d6ad88443",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-16_options.csv",
+      "rows": 32502,
+      "bytes": 6069009,
+      "sha256": "33ddc12c6566b90c8adf5c33e9038f28167131025cab3a41f68e74a3666aae33",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-19_options.csv",
+      "rows": 30756,
+      "bytes": 5842791,
+      "sha256": "b54a395869f600d0108f9d8c0c5c007f819a464cd878964acae3b680005067b1",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-20_options.csv",
+      "rows": 31054,
+      "bytes": 5776969,
+      "sha256": "a64f3b30ed5d869eda92d566e46d5db69b7384ef6a812764275248e3e3f04fbb",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-21_options.csv",
+      "rows": 31072,
+      "bytes": 5806874,
+      "sha256": "441a63a4067acda2b564094b1641b26fa02970841e88679baa76584d58952a5b",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-22_options.csv",
+      "rows": 30866,
+      "bytes": 5819795,
+      "sha256": "3f460e2f98fb8e2f2ebdd0ec648c32bb197c97c5a6135a8e1137fcd692a05a78",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-23_options.csv",
+      "rows": 31382,
+      "bytes": 5908436,
+      "sha256": "cf34daa84b1b30e40f74c45ae4d2f46d47ff2d6d036cbf9202f3f464bc598559",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-27_options.csv",
+      "rows": 30472,
+      "bytes": 5646777,
+      "sha256": "9354d22a2db32619352812b0f349b89ef71884f8c7b909021c7996333db5b09a",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-28_options.csv",
+      "rows": 30874,
+      "bytes": 5769245,
+      "sha256": "966ead3687f8fc0126a8fc8d7d681ae7683dc5e38a1aa30f90347ab2c8b58c66",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-29_options.csv",
+      "rows": 30802,
+      "bytes": 5791805,
+      "sha256": "d2d26e72ee644b482fd488057b3d890dd96bbeede6270cacef46b863f41071f7",
+      "schema_validated": true
+    },
+    {
+      "name": "2022-12-30_options.csv",
+      "rows": 31028,
+      "bytes": 5758780,
+      "sha256": "92cdcbd6a7e3b7ced42db8342670817ca84f8aaebbeaddf287551e8d3e863c7f",
+      "schema_validated": true
+    }
+  ],
+  "publisher_manifest_sha256": "be929e8164c92a6c0368af2e0877eb077bbc6cdaa5cb27365de5d102e958e160",
+  "publisher_license_sha256": "0dfa7d5816499a02271124b1c7cbc8d5ff6d30be09048cdbf9ea8a71092df264",
+  "first_day": "2022-07-01",
+  "last_day": "2022-12-30",
+  "day_files": 127,
+  "quality_counts": {
+    "rows": 4294301,
+    "quote_time_missing": 4294301,
+    "bid_missing": 351769,
+    "ask_missing": 91380,
+    "underlying_close_missing": 0,
+    "crossed_quotes": 0,
+    "spxw_european_pm_rows": 1635844,
+    "spxw_two_sided_uncrossed_rows": 1531527,
+    "last_trade_before_quote_date": 1729926
+  },
+  "underlying_counts": {
+    "SPXW": 1635844,
+    "SPY": 1086492,
+    "SPX": 845643,
+    "TSLA": 625260,
+    "KO": 101062
+  },
+  "spx_spxw_close_discrepancies": [
+    {
+      "date": "2022-09-19",
+      "max_difference": 3.049999999999727
+    },
+    {
+      "date": "2022-11-16",
+      "max_difference": 2.9900000000002365
+    },
+    {
+      "date": "2022-11-17",
+      "max_difference": 1.6700000000000728
+    },
+    {
+      "date": "2022-12-05",
+      "max_difference": 0.01999999999998181
+    },
+    {
+      "date": "2022-12-21",
+      "max_difference": 2.6799999999998363
+    }
+  ],
+  "cleaning": [
+    "None: contract CSV bytes retained exactly as published",
+    "Independently check publisher file hashes, bytes, rows, schema and file-set coverage",
+    "Reject unsafe ZIP paths, links, collisions and excessive expanded size",
+    "Validate study input types, key uniqueness, date alignment and positive available prices",
+    "No provider Python is executed; validation does not claim to reproduce every vendor solver invariant"
+  ],
+  "usage": [
+    "Free sample evaluation allowed by publisher terms",
+    "Keep original and contract-level derived data local and out of Git",
+    "Do not redistribute raw files or reconstructable derived outputs",
+    "Credit HistoricalData.net with a link in public research"
+  ],
+  "limitations": [
+    "Third-party historical archive, not authenticated exchange quote data; hashes establish delivery integrity only",
+    "All 2022 quote_time cells are blank: freshness and simultaneous quote times cannot be verified",
+    "Last standing option quotes and underlying closes can be asynchronous; an EOD file is not a synchronized snapshot",
+    "SPX and SPXW underlying_close differences are recorded, not silently reconciled",
+    "Provider iv and Greeks are computed fields, not independent validation truth",
+    "Do not treat missing bid/ask, volume or trade dates as zero",
+    "Only six months and five roots; no claim of complete market or regime coverage"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "reviewed_utc": "2026-09-20T09:46:10.870355+00:00",
+  "status": "PASS",
+  "html_pages_checked": 14,
+  "local_links_checked": 55,
+  "broken_local_links": [],
+  "report_bundle_hashes_verified": 44,
+  "files_over_5mb_in_public_candidate": [],
+  "raw_or_local_files_in_public_candidate": [],
+  "public_candidate_files": 117,
+  "public_candidate_bytes": 3220911,
+  "candidate_count_note": "Snapshot excludes this publication receipt itself.",
+  "primary_outputs_unchanged": {
+    "market_predictions_sha256": "4d3b8a83534f21a2cda221d7003eb8ca73185563c2e9a3b42fa802f6142e451a",
+    "option_results_sha256": "269c41ea1595ce32f1f542dee27580371f8f0715a425ac06daea47b1db7a1673"
+  },
+  "offline_verification": {
+    "tests": 141,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "browser_review": {
+    "result": "PASS",
+    "checks": [
+      "Landing findings and 141-test status",
+      "2020 Gaussian annual defaults and 2015 FHS selection",
+      "CHF positive HPL and 2020 worst-loss event with currency attribution",
+      "Annual distribution disclosure",
+      "Evaluation all-baseline status and equal-date call slice",
+      "Development equal-group put slice",
+      "390px viewport: 375px content width without document overflow; tables scroll internally",
+      "Seven option report figures loaded",
+      "No browser console errors during evidence-page review"
+    ]
+  },
+  "publication_scope": "Local gallery only; raw and derived per-contract data remain ignored by Git."
+}

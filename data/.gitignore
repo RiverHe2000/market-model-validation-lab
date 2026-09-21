@@ -1,0 +1,6 @@
+# Source bytes, downloads, and contract-level observations remain local.
+raw/
+processed/
+**/*.part
+**/*.part.json
+**/*.tmp
